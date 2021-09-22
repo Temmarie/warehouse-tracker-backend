@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.6'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-gem 'mini_racer'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,6 +51,10 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_bot_rails', '~> 6.1'
   gem 'shoulda-matchers', '~> 4.5', '>= 4.5.1'
+end
+
+group :production do
+  gem 'mini_racer'
 end
 
 group :development do
